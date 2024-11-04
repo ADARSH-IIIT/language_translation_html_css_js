@@ -1,0 +1,50 @@
+
+
+.mic_box_parent{
+
+
+    width: 100%;
+    border-radius: 10px;
+    /* background-color: firebrick; */
+     flex: .1;
+
+    background-color: rgba(243, 236, 236, 0.884);
+
+    background-color: rgb(2, 2, 44);
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* padding: 1%; */
+    box-sizing: border-box;
+
+
+}
+
+.mic_box_parent>i{
+    font-size: 150%;
+
+
+    color: white;
+
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1); /* Smooth scaling with a custom curve */
+    transform-origin: center; /* Ensures scaling is centered */
+
+    /* color: red; */
+    /* transform: scale(1.5); */
+    /* border: 1px solid black; */
+}
+
+
+
+
+@media screen and (max-width : 600px) {
+
+
+.mic_box_parent{
+    padding: 2%;
+}
+}

@@ -1,0 +1,19 @@
+.lang_select_parent{
+    /* background-color: red; */
+    background-color: rgba(243, 236, 236, 0.884);
+    background-color: rgb(2, 2, 44);
+
+
+    width: 100%;
+    border-radius: 10px;
+    flex: .05;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1%;
+ 
+
+}

@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Exo 2";
+    /* font-family: 800; */
+/* overflow: scroll; */
+/* overflow: hidden; */
+}
+
+
+
+.mainparent{
+    background-color: rgba(243, 236, 236, 0.884);
+    background-color: rgb(6, 6, 75);
+    background-color: rgb(2, 2, 44);
+    background-color: rgb(27, 27, 75);
+
+
+    /* background-color: #00bd56; */
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5%;
+}
+
+
+
+
+/* flipping 90deg clockwise both parts */
+@media screen and (max-width : 600px) {
+
+
+
+    .mainparent{
+        flex-direction: column-reverse;
+        gap: 2%;
+       
+    }
+    
+}

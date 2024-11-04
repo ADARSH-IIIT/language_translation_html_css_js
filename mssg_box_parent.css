@@ -1,0 +1,26 @@
+
+
+.mssg_box_parent{
+    /* background-color: yellow; */
+    background-color: rgba(243, 236, 236, 0.884);
+    background-color: rgb(27, 27, 75);
+
+
+    width: 100%;
+    border-radius: 10px;
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.mssg_box_parent>p{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    color: white;
+}

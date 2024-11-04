@@ -1,0 +1,80 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>language_translator</title>
+    <link rel="stylesheet" href="outer_style.css">
+    <link rel="stylesheet" href="user_parent_style.css">
+    <link rel="stylesheet" href="language_select.css">
+    <link rel="stylesheet" href="mssg_box_parent.css">
+    <link rel="stylesheet" href="mic_box_parent.css">
+    <link rel="stylesheet" href="language_dropdown.css">
+
+
+    <script src="selected_language.js" defer ></script>
+    <script src="startrecording.js" defer ></script>
+    <script src="updatemessage.js"  defer ></script>
+
+    <script src="mic_size_changer.js"  defer ></script>
+    <script src="speak_message.js"></script>
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer  />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+
+                <div class="mainparent">
+
+
+                        <div class="user1parent">
+                                    <div  class="lang_select_parent">
+                                        <div class="dropdown">
+                                            <button class="dropdown-btn" id="dropdownBtnuser1">Select Language</button>
+                                            <div class="dropdown-content">
+                                                <a href="#" data-lang="en" onclick="updateLanguage( 'user1'  ,'English', 'en')">English</a>
+                                                <a href="#" data-lang="hi" onclick="updateLanguage('user1'  ,  'Hindi', 'hi')">हिन्दी </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div  class="mssg_box_parent"><p id="user1currentmessage" onclick="speakContent(event )" ></p></div>
+                                    <div class="mic_box_parent"><i class="fa-solid fa-microphone-lines"   onclick="startRecording( 'user1' )" id="user1mic"></i></div>
+                        </div>
+
+
+
+                        <div class="user2parent">
+                            <div  class="lang_select_parent">
+
+                                <div class="dropdown">
+                                    <button class="dropdown-btn" id="dropdownBtnuser2">Select Language</button>
+                                    <div class="dropdown-content">
+                                        <a href="#" data-lang="en" onclick="updateLanguage( 'user2' , 'English', 'en')">English</a>
+                                        <a href="#" data-lang="hi" onclick="updateLanguage( 'user2'  , 'Hindi', 'hi')">हिन्दी </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+
+
+
+                            <div  class="mssg_box_parent"><p id="user2currentmessage"  onclick="speakContent(event )"></p></div>
+                            <div class="mic_box_parent"><i class="fa-solid fa-microphone-lines"  onclick="startRecording( 'user2' )" id="user2mic"></i></div>
+                            
+                        </div>
+
+
+                </div>
+    
+</body>
+</html
